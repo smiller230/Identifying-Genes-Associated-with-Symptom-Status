@@ -30,8 +30,12 @@ To obtain the test dataset, run the getAnnotations python script which will use 
 python3 getAnnotations.py
 ```
 ### 2. Obtain Clusters and Centroid Sequences Using Usearch
-Run the usearch command to obtain clusters 
+Run the usearch command to obtain clusters:
 ```
 ./usearch_lin -cluster_fast proteinSeqs.faa -id 0.90 -centroids nr.fasta -clusters cluster_dir/c_
 ```
 ### 3. Generate Presence/Absence Matrix:
+To generate the Presence/Absence Matrix, run this command:
+```
+python3 generate_pres_abs_matrix.py
+```
